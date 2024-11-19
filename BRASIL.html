@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- ===== STYLE.CSS ===== -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/table.css"/>
+
+    <!-- ===== REMIXICON CDN ===== -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>BRASIL</title>
+  </head>
+  <body>
+    <!-- ===== OVERLAY ===== -->
+    <div class="overlay first"></div>
+    <div class="overlay second"></div>
+    <div class="overlay third"></div>
+
+    <!-- ===== CONTAINER'S ===== -->
+    <div class="left_container"></div>
+    <div class="right_container"></div>
+
+    <!-- ===== STRIPS ===== -->
+    <div class="strips">
+        <div class="left_strip"></div>
+        <div class="right_strip"></div>
+    </div>
+
+    <!-- ===== NAVBAR ===== -->
+    <header>
+      <nav class="nav body_layout">
+        <div class="nav_insider">
+          <div class="logo">
+            <h3 class="nav__icon">BRASIL <sup>2025</sup></h3>
+          </div>
+
+
+          <div class="nav__menu" id="nav__menu">
+              <ul class="nav__list">
+                  <li class="nav__item"><a href="#" class="nav__link">JUANI</a></li>
+                  <li class="nav__item"><a href="#" class="nav__link">BENJA</a></li>
+                  <li class="nav__item"><a href="#" class="nav__link">NICO</a></li>
+                  <li class="nav__item search_btn">
+                    <button class="search_btn">
+                      <i class="ri-search-line"></i>
+                    </button>
+                  </li>
+                  <li class="nav__item cart_btn">
+                    <button class="cart_btn">
+                        <i class="ri-shopping-bag-fill"></i>
+                    </button>
+                  </li>
+              </ul>
+          </div>  
+        </div>
+
+        <div class="cart_btn_wrapper">
+          <button class="search_btn" onclick="mostrarocultar()"><i class="ri-eye-line"></i></button>
+          <button class="search_btn"><i class="ri-search-line"></i></button>
+          <button class="cart_btn"> <i class="ri-shopping-bag-fill"></i></button>
+        </div>
+
+        <button class="menu_toggle_btn" id="menu_toggle_btn">
+          <i class="ri-menu-3-fill nav__icon"></i>
+        </button>
+      </nav>
+    </header>
+
+    <!-- ===== SOCIAL ===== -->
+    <div class="social">
+        <ul class="social__list">
+            <li class="social_item"><i class="ri-facebook-fill"></i></li>
+            <li class="social_item"><i class="ri-instagram-fill"></i></li>
+            <li class="social_item"><i class="ri-twitter-fill"></i></li>
+        </ul>
+    </div>
+
+    <!-- ===== PRODUCT-IMAGE ===== -->
+    <img src="./img/BRASIL.jpg" id="imagen" class="product_img" alt="product_img">
+
+    <!-- ===== PRODUCT-INFO ===== -->
+    <div class="product_text" id="divcurio">
+      <h1 class="product_title">BRASIL 2025</h1>
+    </div>
+
+    
+      <div class="gallery" id="divtexto" style="display:none;">
+      
+        <table  style="height: 300px;" >
+          <tr>
+           <th> >-..-< </th>
+           <th>BLUE LABEL</th>
+           <th>logo</th>
+     
+          </tr>
+          <tr>
+           <td>D</td>
+           <td>MARACANA </td>
+
+           <img id="0" class="preview normal" src="C:\XAMP\htdocs\landing-page-cervantes-qatar2022" alt="">
+          
+         <td> <img id="1" class= "thumb normal" src="img/1930.1.jpg" style="width: 100px;" alt="Mundial 1930" onmouseover="(this.style.height = '300px', this.style.width = '200px')"
+          onmouseout="(this.style.height = '', this.style.width = '50px')"></td>
+         
+        
+
+         <tr>
+           <td>D</td>
+           <td>CRISTO REDENTOR</td>
+           <td> <img id="2" class= "thumb normal" src="img/1930.2.jpg" style="width: 100px;" alt="Mundial 1930" onmouseover="(this.style.height = '300px', this.style.width = '200px')"
+            onmouseout="(this.style.height = '', this.style.width = '50px')"></td>
+
+          </tr>
+          <tr>
+           <td>D</td>
+           <td>:/</td>
+           <td> <img id="3" class= "thumb normal" src="img/1930.3.jpg" style="width: 100px;" alt="Mundial 1930" onmouseover="(this.style.height = '300px', this.style.width = '200px')"
+            onmouseout="(this.style.height = '', this.style.width = '50px')"></td>
+  
+          </tr>
+          <tr>
+           <td>D</td>
+           <td>Z</td>
+           <td> <img id="4" class= "thumb normal" src="img/qatar.png" style="width: 100px;" alt="Mascota" onmouseover="(this.style.height = '300px', this.style.width = '200px')"
+            onmouseout="(this.style.height = '', this.style.width = '50px')"></td>
+ 
+            </tr>
+          </tr>
+         </table>
+        </div>
+        <style>
+        #divtexto{
+           display: none;
+          } 
+        </style>
+  
+   
+   
+
+    <!-- ===== BOTTOM-NAV ===== -->
+    <div class="bottom_nav">
+        <div class="slide_nav_wrapper">
+            <button class="prev direction_btn"><i class="ri-arrow-right-s-line"></i></button>
+            <button class="next direction_btn"><i class="ri-arrow-left-s-line"></i></button>
+        </div>
+        <div class="dots_wrapper">
+          <ul class="dots">
+            <li class="dot"></li>
+            <li class="dot"></li>
+            <li class="dot active"></li>
+            <li class="dot"></li>
+            <li class="dot"></li>
+
+          </ul>
+        </div>
+    </div>
+
+    <!-- ===== GSAP CDN ===== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <!-- ===== SCRIPT.JS ===== -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
